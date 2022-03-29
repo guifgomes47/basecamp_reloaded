@@ -6,9 +6,11 @@
 /*   By: guilhfer <guilhfer@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 10:56:36 by guilhfer          #+#    #+#             */
-/*   Updated: 2022/03/29 14:21:51 by guilhfer         ###   ########.fr       */
+/*   Updated: 2022/03/29 14:58:01 by guilhfer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+void	ft_putchar(int c);
 
 int	main(int argc, char *argv[])
 {
