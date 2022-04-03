@@ -1,16 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guilhfer <guilhfer@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/02 13:17:38 by guilhfer          #+#    #+#             */
-/*   Updated: 2022/04/02 14:06:01 by guilhfer         ###   ########.fr       */
+/*   Created: 2022/03/25 23:39:13 by guilhfer          #+#    #+#             */
+/*   Updated: 2022/03/26 00:58:39 by guilhfer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	FT_ABS_H
-#define	FT_ABS_H
-#define	ABS(Value) ((Value) < 0 ? (Value * - 1) : (Value))
-#endif
+#include <stdio.h>
+#include "ft_swap.c"
+
+int	main(void)
+{
+	int	a = 1000;
+	int	b = 9000;
+
+	printf("%d, %d\n", a, b);
+	ft_swap(&a, &b);
+	printf("%d, %d", a, b);
+	return (0);
+}

@@ -1,16 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guilhfer <guilhfer@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/02 13:17:38 by guilhfer          #+#    #+#             */
-/*   Updated: 2022/04/02 14:06:01 by guilhfer         ###   ########.fr       */
+/*   Created: 2022/03/28 12:41:07 by guilhfer          #+#    #+#             */
+/*   Updated: 2022/03/28 12:44:18 by guilhfer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	FT_ABS_H
-#define	FT_ABS_H
-#define	ABS(Value) ((Value) < 0 ? (Value * - 1) : (Value))
-#endif
+#include <stdio.h>
+#include "ft_sqrt.c"
+
+int main(void)
+{
+	printf("%d\n", ft_sqrt(1000000040));
+	printf("%d\n", ft_sqrt(16777216));
+}

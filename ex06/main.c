@@ -1,16 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guilhfer <guilhfer@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/02 13:17:38 by guilhfer          #+#    #+#             */
-/*   Updated: 2022/04/02 14:06:01 by guilhfer         ###   ########.fr       */
+/*   Created: 2022/03/25 22:06:42 by guilhfer          #+#    #+#             */
+/*   Updated: 2022/03/25 22:09:18 by guilhfer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	FT_ABS_H
-#define	FT_ABS_H
-#define	ABS(Value) ((Value) < 0 ? (Value * - 1) : (Value))
-#endif
+#include <unistd.h>
+#include "ft_print_alphabet.c"
+
+void	ft_putchar(int c)
+{
+	write(1, &c, 1);
+}
+
+int	main(void)
+{
+	ft_print_alphabet();
+	return (0);
+}

@@ -1,16 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guilhfer <guilhfer@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/02 13:17:38 by guilhfer          #+#    #+#             */
-/*   Updated: 2022/04/02 14:06:01 by guilhfer         ###   ########.fr       */
+/*   Created: 2022/03/28 22:49:42 by guilhfer          #+#    #+#             */
+/*   Updated: 2022/03/28 23:45:06 by guilhfer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	FT_ABS_H
-#define	FT_ABS_H
-#define	ABS(Value) ((Value) < 0 ? (Value * - 1) : (Value))
-#endif
+#include <string.h>
+#include <stdio.h>
+#include "ft_strcmp.c"
+
+int	main(void)
+{
+	printf("O:%d\n", strcmp("k", "k"));
+	printf("P:%d\n", ft_strcmp("k", "k"));
+	printf("O:%d\n", strcmp("a", "z"));
+	printf("P:%d\n", ft_strcmp("a", "z"));
+	printf("O:%d\n", strcmp("b", "a"));
+	printf("P:%d\n", ft_strcmp("b", "a"));
+}

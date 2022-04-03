@@ -1,16 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guilhfer <guilhfer@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/02 13:17:38 by guilhfer          #+#    #+#             */
-/*   Updated: 2022/04/02 14:06:01 by guilhfer         ###   ########.fr       */
+/*   Created: 2022/03/28 13:10:16 by guilhfer          #+#    #+#             */
+/*   Updated: 2022/03/28 13:23:17 by guilhfer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef	FT_ABS_H
-#define	FT_ABS_H
-#define	ABS(Value) ((Value) < 0 ? (Value * - 1) : (Value))
-#endif
+
+#include <unistd.h>
+#include "ft_putstr.c"
+
+void	ft_putchar(int c)
+{
+	write(1, &c, 1);
+}
+
+int	main(void)
+{
+	char	*str;
+
+	str = "guilherme ferreira gomes";
+	ft_putstr(str);
+	str = "\n";
+	ft_putstr(str);
+	str = "this is a pointer assignment with string";
+	ft_putstr(str);
+	return (0);
+}
