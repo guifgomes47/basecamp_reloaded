@@ -6,7 +6,7 @@
 /*   By: guilhfer <guilhfer@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 11:27:31 by guilhfer          #+#    #+#             */
-/*   Updated: 2022/04/01 15:31:33 by guilhfer         ###   ########.fr       */
+/*   Updated: 2022/04/03 00:07:55 by guilhfer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_strdup(char *src)
 {
 	char	*cpy;
 
-	cpy = malloc(ft_strlen(src) + 1);
+	cpy = malloc(ft_strlen(src) * sizeof(char) + 1);
 	if (cpy == 0)
 	{
 		return (0);
