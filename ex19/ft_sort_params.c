@@ -6,7 +6,7 @@
 /*   By: guilhfer <guilhfer@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 16:03:43 by guilhfer          #+#    #+#             */
-/*   Updated: 2022/04/05 12:17:12 by guilhfer         ###   ########.fr       */
+/*   Updated: 2022/04/05 12:18:50 by guilhfer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ int	ft_strcmp(char *s1, char *s2)
 	}
 	return (s1[i] - s2[i]);
 }
-
 
 void	ft_swap(int argc, char *argv[])
 {
