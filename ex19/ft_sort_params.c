@@ -6,17 +6,11 @@
 /*   By: guilhfer <guilhfer@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 16:03:43 by guilhfer          #+#    #+#             */
-/*   Updated: 2022/04/05 12:18:50 by guilhfer         ###   ########.fr       */
+/*   Updated: 2022/04/05 12:43:27 by guilhfer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-
-void	ft_putchar(int c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(int c);
 
 int	ft_strcmp(char *s1, char *s2)
 {
