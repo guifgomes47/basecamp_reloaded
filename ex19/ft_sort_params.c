@@ -6,7 +6,7 @@
 /*   By: guilhfer <guilhfer@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 16:03:43 by guilhfer          #+#    #+#             */
-/*   Updated: 2022/04/03 17:30:47 by guilhfer         ###   ########.fr       */
+/*   Updated: 2022/04/05 12:17:12 by guilhfer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,16 @@ void	ft_putchar(int c)
 
 int	ft_strcmp(char *s1, char *s2)
 {
-	while (*s1 == *s2)
+	int	i;
+
+	i = 0;
+	while ((s1[i] == s2[i]) && s1[i] && s2[i])
 	{
-		s1++;
-		s2++;
+		i++;
 	}
-	return (*s1 - *s2);
+	return (s1[i] - s2[i]);
 }
+
 
 void	ft_swap(int argc, char *argv[])
 {
