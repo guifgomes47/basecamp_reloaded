@@ -6,16 +6,18 @@
 /*   By: guilhfer <guilhfer@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 22:49:37 by guilhfer          #+#    #+#             */
-/*   Updated: 2022/04/03 17:29:30 by guilhfer         ###   ########.fr       */
+/*   Updated: 2022/04/05 12:11:50 by guilhfer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strcmp(char *s1, char *s2)
 {
-	while (*s1 == *s2)
+	int	i;
+
+	i = 0;
+	while ((s1[i] == s2[i]) && s1[i] && s2[i])
 	{
-		s1++;
-		s2++;
+		i++;
 	}
-	return (*s1 - *s2);
+	return (s1[i] - s2[i]);
 }
